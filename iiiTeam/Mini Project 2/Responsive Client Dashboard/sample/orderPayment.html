@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Admin Dashboard</title>
+   <title>Order | Payment</title>
 
    <!-- iconscout cdn path -->
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -117,8 +117,12 @@
              </div>
         </div>
 <!-- Date of Transaction 1 container right side -->
+<div class="col-3 offset-9 mt-3">
+   <h2>Transaction #123</h2>
+</div>
+
          
-         <div class="container mt-5">
+         <div class="container mt-3">
             <div class="row">
                 <div class="col-6">
                     <div class="title mb-1">Shipping Details</div>
@@ -189,13 +193,82 @@
                             </label>
                           </div>
                         </div> -->
-                        <div class="button">
-                          <input type="submit" value="Ship Now!">
-                        </div>
+
                       </form>
                     </div>
+                    <div class="row mb-2">
+                     <div class="col-9">
+                        <h3>Order Details</h3>
+                     </div>
+                     <div class="col-3">
+                        <div class="button">
+                           <input type="submit" value="+ Add Order">
+                         </div>
+                     </div>
+                  </div>
+                  <!-- accordion start -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                     <div class="accordion-item">
+                       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                           Item 1 
+                         </button>
+                       </h2>
+                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                         <div class="accordion-body">
+                           <div class="input-group">
+                              <div class="input-group-text" style="width: 200px;">Item Description</div>
+                              <input type="text" class="form-control" id="autoSizingInputGroup">
+                            </div>
+                            <div class="input-group">
+                              <div class="input-group-text" style="width: 200px;">Quantity</div>
+                              <input type="text" class="form-control" id="autoSizingInputGroup">
+                            </div>
+                            <div class="input-group">
+                              <div class="input-group-text" style="width: 200px;">Unit Price</div>
+                              <input type="text" class="form-control" id="autoSizingInputGroup">
+                            </div>
+                            <div class="input-group">
+                              <div class="input-group-text" style="width: 200px;">Weight</div>
+                              <input type="text" class="form-control" id="autoSizingInputGroup">
+                            </div>
+                            <div class="input-group">
+                              <span class="input-group-text" id="basic-addon3" style="width: 200px;">Amount</span>
+                              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="row mt-3 mb-2">
+                        <div class="col-4 offset-8">
+                            <div class="input-group">
+                              <div class="input-group-text ml-5">Total</div>
+                              <div class="input-group-text " style="width: 100px;"></div>
+                            </div>
+                        </div>
+                     </div>
+
+                  </div>
+                   <!-- accordion end -->
                 </div>
                 <div class="col-6">
+                  <div class="row mb-2">
+                     <div class="col-4 offset-8">
+                        <h6>Delivery Date :</h6>
+                        <div class="input-group mb-2">
+                           <div class="input-group-text">@</div>
+                           <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="mm/dd/yyyy">
+                         </div>
+                         <h6 class="pr-5">Order Number: </h6>
+                         <div class="input-group">
+                           <div class="input-group-text ml-5">@</div>
+                           <div class="input-group-text ">12-321231-8</div>
+                         </div>
+                     </div>
+                  </div>
+
+ 
+
                   <div class="container">
                      <!-- 
                         =>Order Number
@@ -205,6 +278,7 @@
                         =>Total
 
                      -->
+                     
                      <div class="row">
                          <div class="col-5 mr-0">
                              <div class="d-grid gap-1 d-md-block">
@@ -274,14 +348,16 @@
                                 </label>
                               </div>
                             </div> -->
-                            <div class="button">
-                              <input type="submit" value="Submit">
-                            </div>
                           </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <form action="">
+               <div class="button">
+                  <input type="submit" value="Ship Now!">
+                </div>
+            </form>
           </div>
 
         </main>
