@@ -16,7 +16,28 @@
             right: 0;
             bottom: 0;
         }
+        
+        /* Styles for small screens (mobile) */
+        @media only screen and (max-width: 767px) {
+         .sidebar {
+             display: none;
+         }
 
+        .main-content {
+             margin-left: 0;
+         }
+        }
+
+        /* Styles for medium and large screens (tablet and desktop) */
+        @media only screen and (min-width: 768px) {
+        .sidebar {
+             margin-right: 30px;
+        }
+
+         .main-content {
+        margin-left: 250px;
+         }
+        }
     </style>
 </head>
 <body>
